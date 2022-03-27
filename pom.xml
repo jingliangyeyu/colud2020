@@ -8,8 +8,8 @@
   <artifactId>cloud2020</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>cloud-provider-paymnet8001</module>
     <module>cloud-provider-payment8001</module>
+    <module>cloud-consumer-order80</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -92,6 +92,7 @@
   </dependencyManagement>
   <!--热启动插件-->
   <build>
+    <finalName>cloud2020</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
