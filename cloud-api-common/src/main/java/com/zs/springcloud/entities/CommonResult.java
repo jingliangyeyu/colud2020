@@ -1,12 +1,14 @@
 package com.zs.springcloud.entities;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author zhouson
  * @create 2022-03-26 16:30
  */
 @Data
+@NoArgsConstructor
 public class CommonResult<T> {
     private Integer code;
     private String message;
