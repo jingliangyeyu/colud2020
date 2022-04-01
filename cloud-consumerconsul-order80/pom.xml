@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-providerconsul-payment8006</artifactId>
+    <artifactId>cloud-consumerconsul-order80</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -63,9 +63,5 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
-
 </project>
-
