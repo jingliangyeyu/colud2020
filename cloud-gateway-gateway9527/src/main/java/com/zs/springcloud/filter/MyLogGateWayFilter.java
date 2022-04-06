@@ -19,10 +19,10 @@ import reactor.core.publisher.Mono;
 public class MyLogGateWayFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        String username = exchange.getRequest().getQueryParams().getFirst("username");
+        String username = exchange.getRequest().getQueryParams().getFirst("uname");
         if (StringUtils.isEmpty(username)) {
             log.info("*****用户名为Null 非法用户,(┬＿┬)");
-            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+            exchange.getResponse().setStatusCode(HttpStatus.NOT_ACCEPTABLE);
             exchange.getResponse().setComplete();
         }
         return chain.filter(exchange);
