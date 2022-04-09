@@ -22,4 +22,7 @@ public interface PaymentFeignService {
 
     @RequestMapping("/feign/timeout")
     String paymentFeignTimeOut();
+
+    @GetMapping("/zipkin")
+    String paymentZipkin();
 }
