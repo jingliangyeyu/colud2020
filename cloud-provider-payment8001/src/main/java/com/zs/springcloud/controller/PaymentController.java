@@ -76,4 +76,9 @@ public class PaymentController {
     public String paymentZipkin() {
         return "hi ,i'am paymentzipkin server fall back，welcome to atguigu，O(∩_∩)O哈哈~";
     }
+
+    @GetMapping("/mytest")
+    public String myTest() {
+        return "再次jrebel热部署测试";
+    }
 }
